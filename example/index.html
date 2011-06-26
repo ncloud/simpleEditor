@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="ko" />
+<title></title>
+<link rel="stylesheet" media="screen" type="text/css" href="../simpleEditor.css" />
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../simpleEditor.js"></script>
+<script type="text/javascript">	
+	$(function() {
+		$('.wysiwyg:not(.add_event)').each(function(i,item) {
+				new simpleEditor({contentClass:'editor', 
+					buttonList : ['bold','italic','underline','strikeThrough','separator','ol','ul'],
+					iconsPath : '../simpleEditor.gif'}).panelInstance(item);
+			}).addClass('add_event');
+
+	});
+</script>
+</head>
+<body>
+	테스트입니다.<br />
+	으하하하<br />
+	<br />
+	<textarea class="wysiwyg" style="width:1000px; height:1000px;">asdlkfjasldfkj</textarea>
+</body>
+</html>

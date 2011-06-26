@@ -1,0 +1,19 @@
+.simpleEditor_wrap { position:relative; }
+ 
+.simpleEditor_panelWrap { position:absolute; left:0; top:0; }	
+	.simpleEditor_panelWrap .simpleEditor_panelContain { background-color:#f9f9f9; }
+	.simpleEditor_panelWrap .simpleEditor_panelContain { overflow: hidden; width: 100%; border: 1px solid rgb(204, 204, 204); background-color:-webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f2f2f2)); background-color: -moz-linear-gradient(top,  #f9f9f9,  #f2f2f2); }
+	.simpleEditor_panelWrap .simpleEditor_panel { margin: 0px 2px 2px; overflow: hidden; }
+		.simpleEditor_panelWrap .simpleEditor_buttonWrap { float: left; margin-top: 2px; }
+			.simpleEditor_panelWrap .simpleEditor_buttonContain { width: 20px; height: 20px; opacity: 0.4; }
+
+			.simpleEditor_panelWrap .simpleEditor_button_normal { background-color: transparent; border: 1px solid transparent; }
+			.simpleEditor_panelWrap .simpleEditor_button_hover { background-color: #ddd; border: 1px solid #666; }
+			.simpleEditor_panelWrap .simpleEditor_button_active { background-color: #ddd; border: 1px solid #666; }
+			.simpleEditor_panelWrap .simpleEditor_button_hover:active { background:#bbb; border-left:1px solid #333; border-top:1px solid #333; }
+
+			.simpleEditor_panelWrap .simpleEditor_separator  { width: 18px; height: 18px; overflow: hidden; }
+			.simpleEditor_panelWrap .simpleEditor_button  { width: 18px; height: 18px; overflow: hidden; cursor: pointer;  }
+
+.simpleEditor_mainWrap { padding-top:30px; border:1px solid #ccc; border-top:0; background:#fff; overflow-y:'auto'; overflow-x:'hidden'; }
+	.simpleEditor_mainWrap .simpleEditor_main { margin: 4px; margin-top:0; outline:none; cursor:text; }
