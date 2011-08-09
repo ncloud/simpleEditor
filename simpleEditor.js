@@ -434,7 +434,9 @@ var simpleEditorInstance = bkClass.extend({
 			this.isFocused = true;
 			
 			if(this.elm.height() < 100) {
-				this.elm.animate({height:100+"px"});
+				this.elm.animate({height:100+"px"}, function() {
+					$(this).css('min-height','100px').css('height','auto');
+				});
 			}
 			
 			this.elm.addClass('simpleEditor_selected');
